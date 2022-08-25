@@ -46,6 +46,8 @@ int main()
 
     cout << "long double Range: " << LDBL_MIN << "," << LDBL_MAX << endl;
     cout << "long double(negative) Range: " << -LDBL_MIN_10_EXP << ", " << -LDBL_MAX_10_EXP << endl << endl;
+
+    cout << "New Line Added\n";
     
 }
 
