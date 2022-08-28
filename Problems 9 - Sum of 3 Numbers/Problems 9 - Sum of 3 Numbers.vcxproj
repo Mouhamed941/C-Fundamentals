@@ -24,6 +24,7 @@
     <ProjectGuid>{aefab001-57ea-4727-82a6-e2a6b7ed71af}</ProjectGuid>
     <RootNamespace>Problems9Sumof3Numbers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Problem 09 - Sum of 3 Numbers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
