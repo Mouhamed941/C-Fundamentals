@@ -15,9 +15,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypesRangesAndSizes", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArithmeticOperators", "ArithmeticOperators\ArithmeticOperators.vcxproj", "{34177D9C-858A-4BD8-B839-24F3D6B45A65}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 7 - Half Number", "Problem 7 Half Number\Problem 7 Half Number.vcxproj", "{C8843EDD-07EF-4B46-A1DE-9A833FBF98C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 07 - Half Number", "Problem 7 Half Number\Problem 7 Half Number.vcxproj", "{C8843EDD-07EF-4B46-A1DE-9A833FBF98C8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problems 9 - Sum of 3 Numbers", "Problems 9 - Sum of 3 Numbers\Problems 9 - Sum of 3 Numbers.vcxproj", "{AEFAB001-57EA-4727-82A6-E2A6B7ED71AF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 09 - Sum of 3 Numbers", "Problems 9 - Sum of 3 Numbers\Problems 9 - Sum of 3 Numbers.vcxproj", "{AEFAB001-57EA-4727-82A6-E2A6B7ED71AF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 10 - Average of 3 Marks", "Problem 10 - Average of 3 Marks\Problem 10 - Average of 3 Marks.vcxproj", "{2DD24AF2-FD14-49B4-B9A8-C6BE61A6708C}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logical OperatorsHomework", "Logical OperatorsHomework\Logical OperatorsHomework.vcxproj", "{CB53A6A1-39FE-4287-85C2-297D37F45D5E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 16 - Rectangle area Through Diagonal and Side Area", "Problem 16 - Rectangle area Through Diagonal and Side Area\Problem 16 - Rectangle area Through Diagonal and Side Area.vcxproj", "{777792CA-A296-4F5E-BBFA-F6F18EA4F048}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 18 Circle Area", "Problem 18 Circle Area\Problem 18 Circle Area.vcxproj", "{809B4B36-E506-46D9-9F21-55DF2CE9F86C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -291,6 +293,14 @@ Global
 		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x64.Build.0 = Release|x64
 		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x86.ActiveCfg = Release|Win32
 		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x86.Build.0 = Release|Win32
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Debug|x64.ActiveCfg = Debug|x64
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Debug|x64.Build.0 = Debug|x64
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Debug|x86.ActiveCfg = Debug|Win32
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Debug|x86.Build.0 = Debug|Win32
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Release|x64.ActiveCfg = Release|x64
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Release|x64.Build.0 = Release|x64
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Release|x86.ActiveCfg = Release|Win32
+		{809B4B36-E506-46D9-9F21-55DF2CE9F86C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

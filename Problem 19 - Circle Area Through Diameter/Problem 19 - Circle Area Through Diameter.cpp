@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>;
  using namespace std;
 int main()
 {
@@ -7,7 +8,7 @@ int main()
     cout << "Please Enter The Diameter of the Circle : \n";
     cin >> Diameter;
     cout << endl;
-    float Area = (Pi * Diameter*Diameter) / 4;
+    float Area = (Pi * pow(Diameter,2) / 4);
     cout << "The Area of This Rectangele is : " << Area << endl;
 }
 
