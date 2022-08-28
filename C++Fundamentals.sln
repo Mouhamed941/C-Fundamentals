@@ -15,7 +15,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypesRangesAndSizes", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArithmeticOperators", "ArithmeticOperators\ArithmeticOperators.vcxproj", "{34177D9C-858A-4BD8-B839-24F3D6B45A65}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 7 Half Number", "Problem 7 Half Number\Problem 7 Half Number.vcxproj", "{C8843EDD-07EF-4B46-A1DE-9A833FBF98C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 7 - Half Number", "Problem 7 Half Number\Problem 7 Half Number.vcxproj", "{C8843EDD-07EF-4B46-A1DE-9A833FBF98C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problems 9 - Sum of 3 Numbers", "Problems 9 - Sum of 3 Numbers\Problems 9 - Sum of 3 Numbers.vcxproj", "{AEFAB001-57EA-4727-82A6-E2A6B7ED71AF}"
 EndProject
@@ -54,6 +54,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Increment Decrement Operators", "ncrement Decrement Operators\ncrement Decrement Operators.vcxproj", "{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Relational OperatorsHomework", "Relational OperatorsHomework\Relational OperatorsHomework.vcxproj", "{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logical OperatorsHomework", "Logical OperatorsHomework\Logical OperatorsHomework.vcxproj", "{CB53A6A1-39FE-4287-85C2-297D37F45D5E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 16 - Rectangle area Through Diagonal and Side Area", "Problem 16 - Rectangle area Through Diagonal and Side Area\Problem 16 - Rectangle area Through Diagonal and Side Area.vcxproj", "{777792CA-A296-4F5E-BBFA-F6F18EA4F048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -271,6 +275,22 @@ Global
 		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x64.Build.0 = Release|x64
 		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x86.ActiveCfg = Release|Win32
 		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x86.Build.0 = Release|Win32
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Debug|x64.ActiveCfg = Debug|x64
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Debug|x64.Build.0 = Debug|x64
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Debug|x86.Build.0 = Debug|Win32
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Release|x64.ActiveCfg = Release|x64
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Release|x64.Build.0 = Release|x64
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Release|x86.ActiveCfg = Release|Win32
+		{CB53A6A1-39FE-4287-85C2-297D37F45D5E}.Release|x86.Build.0 = Release|Win32
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Debug|x64.ActiveCfg = Debug|x64
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Debug|x64.Build.0 = Debug|x64
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Debug|x86.ActiveCfg = Debug|Win32
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Debug|x86.Build.0 = Debug|Win32
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x64.ActiveCfg = Release|x64
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x64.Build.0 = Release|x64
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x86.ActiveCfg = Release|Win32
+		{777792CA-A296-4F5E-BBFA-F6F18EA4F048}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
