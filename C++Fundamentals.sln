@@ -51,6 +51,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 47 - Loan Instalmen
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 48 - Monthly Loan Installment", "Problem 48 - Monthly Loan Installment\Problem 48 - Monthly Loan Installment.vcxproj", "{EBD73B92-A269-4FDB-B39F-49241B02D0FA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Increment Decrement Operators", "ncrement Decrement Operators\ncrement Decrement Operators.vcxproj", "{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Relational OperatorsHomework", "Relational OperatorsHomework\Relational OperatorsHomework.vcxproj", "{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +255,22 @@ Global
 		{EBD73B92-A269-4FDB-B39F-49241B02D0FA}.Release|x64.Build.0 = Release|x64
 		{EBD73B92-A269-4FDB-B39F-49241B02D0FA}.Release|x86.ActiveCfg = Release|Win32
 		{EBD73B92-A269-4FDB-B39F-49241B02D0FA}.Release|x86.Build.0 = Release|Win32
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Debug|x64.ActiveCfg = Debug|x64
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Debug|x64.Build.0 = Debug|x64
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Debug|x86.ActiveCfg = Debug|Win32
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Debug|x86.Build.0 = Debug|Win32
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Release|x64.ActiveCfg = Release|x64
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Release|x64.Build.0 = Release|x64
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Release|x86.ActiveCfg = Release|Win32
+		{D23C80F8-19AE-4B5D-8FAF-413589C0A11C}.Release|x86.Build.0 = Release|Win32
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Debug|x64.ActiveCfg = Debug|x64
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Debug|x64.Build.0 = Debug|x64
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Debug|x86.Build.0 = Debug|Win32
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x64.ActiveCfg = Release|x64
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x64.Build.0 = Release|x64
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x86.ActiveCfg = Release|Win32
+		{FB23FD57-9B56-4BE8-BEBD-70BA2D6E569B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
