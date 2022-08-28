@@ -10,7 +10,7 @@ int main()
     cout << "Please Enter The Circumference of the Circle : \n";
     cin >> Circumference;
     cout << endl;
-    float Area = (Circumference * Circumference) / (4 * Pi);
+    float Area = pow(Circumference,2) / (4 * Pi);
     cout << "The Area of This Circle is : " << Area << endl;
 }
 

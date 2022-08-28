@@ -13,7 +13,7 @@ int main()
     cout << "Please Enter The Base  of the Triangle : \n";
     cin >> TriangleBase;
     cout << endl;
-    float Area = (Pi * ((TriangleBase * TriangleBase) / 4)) * ((2 * TriangleHeight - TriangleBase) / (2 * TriangleHeight + TriangleBase));
+    float Area = (Pi * (pow(TriangleBase,2) / 4)) * ((2 * TriangleHeight - TriangleBase) / (2 * TriangleHeight + TriangleBase));
     cout << "The Area of This Circle is : " << Area << endl;
    
 }

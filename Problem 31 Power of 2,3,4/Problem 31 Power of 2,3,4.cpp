@@ -1,4 +1,4 @@
-
+#include <cmath>;
 #include <iostream>
 using namespace std;
 int main()
@@ -7,11 +7,9 @@ int main()
     short Number;
     cin >> Number;
     cout << endl;
-    short PowerOf2 = Number * Number;
-    short PowerOf3 = Number * Number * Number;
-    short PowerOf4 = Number * Number * Number * Number;
-    cout << PowerOf2 << endl;
-    cout << PowerOf3 << endl;
-    cout << PowerOf4 << endl;
+    
+    cout << pow(Number,2) << endl;
+    cout <<  pow(Number,3) << endl;
+    cout <<  pow(Number,4) << endl;
 }
 
