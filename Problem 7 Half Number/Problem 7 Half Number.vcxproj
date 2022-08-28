@@ -24,6 +24,7 @@
     <ProjectGuid>{c8843edd-07ef-4b46-a1de-9a833fbf98c8}</ProjectGuid>
     <RootNamespace>Problem7HalfNumber</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Problem 7 - Half Number</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
