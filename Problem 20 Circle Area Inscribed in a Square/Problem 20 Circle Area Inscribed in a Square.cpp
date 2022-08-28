@@ -2,7 +2,7 @@
 //
 using namespace std;
 #include <iostream>
-
+#include <cmath>;
 int main()
 {
     float A;
@@ -10,7 +10,7 @@ int main()
     cout << "Please Enter The Hieght of the Square : \n";
     cin >> A;
     cout << endl;
-    float Area =(Pi*A*A)/4;
+    float Area = (Pi * pow(A, 2) / 4);
     cout << "The Area of This Circle is : " << Area << endl;
 }
 
