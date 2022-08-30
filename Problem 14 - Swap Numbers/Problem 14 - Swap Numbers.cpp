@@ -1,5 +1,13 @@
 #include <iostream>
 using namespace std;
+void SwapNumbers(int Number1, int Number2)
+{
+    int Plate;
+    Plate = Number1;
+    Number1 = Number2;
+    Number2 = Plate;
+    cout << Number1 << endl << Number2 << endl;
+}
 int main()
 {
     int Number1, Number2;
@@ -11,14 +19,10 @@ int main()
     cin >> Number2;
     cout << endl;
 
-    cout << Number1 << endl << Number2 << endl << endl;
-
-    int emptyPlate;
-    emptyPlate = Number1;
-    Number1 = Number2;
-    Number2 = emptyPlate;
-
     cout << Number1 << endl << Number2 << endl;
+    SwapNumbers(Number1, Number2);
+
+  
 }
 
 
