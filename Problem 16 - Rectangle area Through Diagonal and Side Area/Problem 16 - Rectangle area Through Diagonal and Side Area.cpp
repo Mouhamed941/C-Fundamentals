@@ -3,6 +3,11 @@
 using namespace std;
 #include <iostream>
 #include <cmath>;
+double RectangleAreaThroughDiagonalandSideArea(double Side, double Diagonal)
+{
+    double Area = Side * (sqrt(pow(Diagonal, 2) - (pow(Side, 2))));
+    return Area;
+}
 int main()
 {   std::cout << "Please Enter The Side  Of Rectangle : \n";
     double Side;
@@ -13,8 +18,8 @@ int main()
     cin >> Diagonal;
 
     
-    double Area = Side * (sqrt(pow(Diagonal, 2) - (pow(Side, 2))));
-    cout << Area << endl;
+    
+    cout << RectangleAreaThroughDiagonalandSideArea(Side,Diagonal) << endl;
 
 
 }
