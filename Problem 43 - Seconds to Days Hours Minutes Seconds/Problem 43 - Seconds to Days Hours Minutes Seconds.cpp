@@ -1,18 +1,12 @@
 using namespace std;
 #include <iostream>
-
-int main()
+void SecondsConverter(int NumberOfSecnds)
 {
-    cout << "Please Enter The Number Of Seconds : \n";
-    int TotalSeconds;
-    cin >> TotalSeconds;
-
     int SecondsPerDay = 24 * 60 * 60;
-    int SecondsPerHour =  60 * 60;
-    int SecondsPerMinute =  60;
-
-    int NumberOfDays = floor(TotalSeconds / SecondsPerDay);
-    int Remainder = TotalSeconds % SecondsPerDay;
+    int SecondsPerHour = 60 * 60;
+    int SecondsPerMinute = 60;
+    int NumberOfDays = floor(NumberOfSecnds / SecondsPerDay);
+    int Remainder = NumberOfSecnds % SecondsPerDay;
 
     int NumberOfHours = floor(Remainder / SecondsPerHour);
     Remainder = Remainder % SecondsPerHour;
@@ -22,6 +16,16 @@ int main()
 
     int NumberOfSeconds = Remainder;
     cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds << endl;
+}
+int main()
+{
+    cout << "Please Enter The Number Of Seconds : \n";
+    int TotalSeconds;
+    cin >> TotalSeconds;
+    SecondsConverter(TotalSeconds);
+    
+
+    
 
 }
 
