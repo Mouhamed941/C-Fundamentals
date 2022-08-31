@@ -3,6 +3,11 @@
 using namespace std;
 #include <iostream>
 #include <cmath>;
+void PowerOfM(int Number, int Exponent)
+{
+    //This function prints the result of given Number and given exponent
+    cout << pow(Number, Exponent) << endl;
+}
 int main()
 {
     std::cout << "Please Enter a Number : \n";
@@ -10,10 +15,10 @@ int main()
     cin >> Number;
 
     std::cout << "Please Enter a power : \n";
-    int M;
-    cin >> M;
+    int Exponent;
+    cin >> Exponent;
 
-    cout << pow(Number, M) << endl;
+    PowerOfM(Number, Exponent);
 
 }
 
