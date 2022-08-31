@@ -2,15 +2,20 @@
 //
 using namespace std;
 #include <iostream>
-
+float CircleArea(float Circumference)
+{
+    const float Pi = 3.14;
+    float Area = pow(Circumference, 2) / (4 * Pi);
+    return Area;
+}
 int main()
 {
     float Circumference;
-    const float Pi = 3.14;
+   
     cout << "Please Enter The Circumference of the Circle : \n";
     cin >> Circumference;
     cout << endl;
-    float Area = pow(Circumference,2) / (4 * Pi);
-    cout << "The Area of This Circle is : " << Area << endl;
+    
+    cout << "The Area of This Circle is : " << CircleArea(Circumference) << endl;
 }
 
