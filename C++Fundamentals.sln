@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 01 NamePrinter", "P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 02 UserNamePrinter", "Problem 02 UserNamePrinter\Problem 02 UserNamePrinter.vcxproj", "{B3D94D9C-A1A5-4898-B350-D692BDFDFC74}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Variable Scope_Local vs Global Variables", "Variable Scope_Local vs Global Variables\Variable Scope_Local vs Global Variables.vcxproj", "{98169F15-A62C-4CF8-BB74-420BD04E5505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +403,14 @@ Global
 		{B3D94D9C-A1A5-4898-B350-D692BDFDFC74}.Release|x64.Build.0 = Release|x64
 		{B3D94D9C-A1A5-4898-B350-D692BDFDFC74}.Release|x86.ActiveCfg = Release|Win32
 		{B3D94D9C-A1A5-4898-B350-D692BDFDFC74}.Release|x86.Build.0 = Release|Win32
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Debug|x64.ActiveCfg = Debug|x64
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Debug|x64.Build.0 = Debug|x64
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Debug|x86.ActiveCfg = Debug|Win32
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Debug|x86.Build.0 = Debug|Win32
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Release|x64.ActiveCfg = Release|x64
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Release|x64.Build.0 = Release|x64
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Release|x86.ActiveCfg = Release|Win32
+		{98169F15-A62C-4CF8-BB74-420BD04E5505}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
