@@ -1,35 +1,40 @@
 using namespace std;
 #include <iostream>
-
-int main()
+int TotalSecondCalculator(int NumberOfDays, int NumberOfHours, int NumberOfMinutes, int NumberOfSeconds)
 {
-    cout << "Please Enter The Number Of Days : \n";
-    int NumberOfDays;
-    cin >> NumberOfDays;
     int DayPerSeconds = 24 * 60 * 60;
     DayPerSeconds = NumberOfDays * DayPerSeconds;
 
-
-    cout << "Please Enter The Number Of Hours : \n";
-    int NumberOfHours;
-    cin >> NumberOfHours;
-    int HourPerSeconds =  60 * 60;
+    int HourPerSeconds = 60 * 60;
     HourPerSeconds = NumberOfHours * HourPerSeconds;
 
-    cout << "Please Enter The Number Of Minutes : \n";
-    int NumberOfMinutes;
-    cin >> NumberOfMinutes;
-    int MinutePerSeconds =  60;
+    int MinutePerSeconds = 60;
     MinutePerSeconds = NumberOfMinutes * MinutePerSeconds;
 
-    cout << "Please Enter The Number Of Seconds : \n";
-    int NumberOfSeconds;
-    cin >> NumberOfSeconds;
     int Seconds = NumberOfSeconds;
-    
-    int TotalSeconds = DayPerSeconds + HourPerSeconds + MinutePerSeconds + Seconds;
-    cout << TotalSeconds << endl;
 
+    int TotalSeconds = DayPerSeconds + HourPerSeconds + MinutePerSeconds + Seconds;
+    return TotalSeconds;
+}
+int main()
+{
+    cout << "Please Enter The Number Of Days : \n";
+    int Days;
+    cin >> Days;
+
+    cout << "Please Enter The Number Of Hours : \n";
+    int Hours;
+    cin >> Hours;
+    
+    cout << "Please Enter The Number Of Minutes : \n";
+    int Minutes;
+    cin >> Minutes;
+
+    cout << "Please Enter The Number Of Seconds : \n";
+    int Seconds;
+    cin >> Seconds;
+
+    cout << TotalSecondCalculator(Days,Hours, Minutes, Seconds) << endl;
 }
 
 
