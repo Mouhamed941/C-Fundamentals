@@ -23,9 +23,5 @@ int main()
     int TotalSeconds;
     cin >> TotalSeconds;
     SecondsConverter(TotalSeconds);
-    
-
-    
-
 }
 
