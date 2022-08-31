@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-void SwapNumbers(int Number1, int Number2)
+void SwapNumbers(int &Number1, int &Number2)
 {
-    int Plate;
-    Plate = Number1;
+    int Plate = Number1;
     Number1 = Number2;
     Number2 = Plate;
     cout << Number1 << endl << Number2 << endl;
@@ -21,6 +20,7 @@ int main()
 
     cout << Number1 << endl << Number2 << endl;
     SwapNumbers(Number1, Number2);
+    cout << Number1 << " " << Number2 << endl;
 
   
 }
