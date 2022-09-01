@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Variable Scope_Local vs Glo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Structures and Functions - Re-usability", "Structures and Functions - Re-usability\Structures and Functions - Re-usability.vcxproj", "{9B9568E0-9254-4978-AFA0-9EF9A5FEE26D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -421,6 +423,14 @@ Global
 		{9B9568E0-9254-4978-AFA0-9EF9A5FEE26D}.Release|x64.Build.0 = Release|x64
 		{9B9568E0-9254-4978-AFA0-9EF9A5FEE26D}.Release|x86.ActiveCfg = Release|Win32
 		{9B9568E0-9254-4978-AFA0-9EF9A5FEE26D}.Release|x86.Build.0 = Release|Win32
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Debug|x64.ActiveCfg = Debug|x64
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Debug|x64.Build.0 = Debug|x64
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Debug|x86.Build.0 = Debug|Win32
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x64.ActiveCfg = Release|x64
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x64.Build.0 = Release|x64
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x86.ActiveCfg = Release|Win32
+		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
