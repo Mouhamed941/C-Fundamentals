@@ -87,6 +87,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Structures and Functions - 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays with Functions", "Arrays with Functions\Arrays with Functions.vcxproj", "{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -431,6 +433,14 @@ Global
 		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x64.Build.0 = Release|x64
 		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x86.ActiveCfg = Release|Win32
 		{25A43F9D-82A6-4C30-B6FD-8C802D22AF4C}.Release|x86.Build.0 = Release|Win32
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Debug|x64.ActiveCfg = Debug|x64
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Debug|x64.Build.0 = Debug|x64
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Debug|x86.Build.0 = Debug|Win32
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x64.ActiveCfg = Release|x64
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x64.Build.0 = Release|x64
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x86.ActiveCfg = Release|Win32
+		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
