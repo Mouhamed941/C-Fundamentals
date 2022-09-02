@@ -89,6 +89,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays with Functions", "Arrays with Functions\Arrays with Functions.vcxproj", "{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays of Structure", "Arrays of Structure\Arrays of Structure.vcxproj", "{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 04 - Hire a driver", "Problem 04 - Hire a driver\Problem 04 - Hire a driver.vcxproj", "{8684E228-DA6F-4A4F-90D7-420473F63F79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -441,6 +445,22 @@ Global
 		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x64.Build.0 = Release|x64
 		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x86.ActiveCfg = Release|Win32
 		{0B2C97E8-C7F9-420E-B84E-BF93E9EE72AF}.Release|x86.Build.0 = Release|Win32
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Debug|x64.ActiveCfg = Debug|x64
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Debug|x64.Build.0 = Debug|x64
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Debug|x86.ActiveCfg = Debug|Win32
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Debug|x86.Build.0 = Debug|Win32
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Release|x64.ActiveCfg = Release|x64
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Release|x64.Build.0 = Release|x64
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Release|x86.ActiveCfg = Release|Win32
+		{0427B6E7-CCC1-4741-AD70-AEC5EDFB0028}.Release|x86.Build.0 = Release|Win32
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Debug|x64.ActiveCfg = Debug|x64
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Debug|x64.Build.0 = Debug|x64
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Debug|x86.ActiveCfg = Debug|Win32
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Debug|x86.Build.0 = Debug|Win32
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Release|x64.ActiveCfg = Release|x64
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Release|x64.Build.0 = Release|x64
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Release|x86.ActiveCfg = Release|Win32
+		{8684E228-DA6F-4A4F-90D7-420473F63F79}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
