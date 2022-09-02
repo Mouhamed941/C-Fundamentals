@@ -95,6 +95,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 04 - Hire a driver"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 08  Pass_Fail", "Problem 08  Pass_Fail\Problem 08  Pass_Fail.vcxproj", "{ADFED8DD-D0F1-4977-88E6-AED277140228}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 11 - Average Pass Fail", "Problem 11 - Average Pass Fail\Problem 11 - Average Pass Fail.vcxproj", "{2E54018C-BDFB-4F76-88BA-D078B2B406E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -471,6 +473,14 @@ Global
 		{ADFED8DD-D0F1-4977-88E6-AED277140228}.Release|x64.Build.0 = Release|x64
 		{ADFED8DD-D0F1-4977-88E6-AED277140228}.Release|x86.ActiveCfg = Release|Win32
 		{ADFED8DD-D0F1-4977-88E6-AED277140228}.Release|x86.Build.0 = Release|Win32
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Debug|x64.ActiveCfg = Debug|x64
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Debug|x64.Build.0 = Debug|x64
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Debug|x86.Build.0 = Debug|Win32
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Release|x64.ActiveCfg = Release|x64
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Release|x64.Build.0 = Release|x64
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Release|x86.ActiveCfg = Release|Win32
+		{2E54018C-BDFB-4F76-88BA-D078B2B406E1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
