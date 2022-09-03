@@ -40,7 +40,7 @@ void IdentifyDayOfWeek()
         }
     }
     else
-        cout << "Wrong Day\n";
+        cout << "Wrong Day Please Try Again\n";
 }
 int main()
 {
