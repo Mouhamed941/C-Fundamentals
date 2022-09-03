@@ -41,4 +41,3 @@ int main()
     ReadInfo();
     cout << Calculat(Num1, Num2, OperationType) << endl;
 }
-
