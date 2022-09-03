@@ -10,57 +10,49 @@ void IdentifyMonthOfYear()
     cin >> Num;
     if (Num >= 1 && Num <= 12)
     {
-        if (Num == 1)
+        switch (Num)
         {
+        case 1:
             cout << "January" << endl;
-        }
-        else if (Num == 2)
-        {
+            break;
+        case 2:
             cout << "February" << endl;
-        }
-        else if (Num == 3)
-        {
+            break;
+        case 3:
             cout << "March" << endl;
-        }
-        else if (Num == 4)
-        {
+            break;
+        case 4:
             cout << "April" << endl;
-        }
-        else if (Num == 5)
-        {
+            break;
+        case 5:
             cout << "May" << endl;
-        }
-        else if (Num == 6)
-        {
+            break;
+        case 6:
             cout << "June" << endl;
-        }
-        else if (Num == 7)
-        {
+            break;
+        case 7:
             cout << "July" << endl;
-        }
-        else if (Num == 8)
-        {
+            break;
+        case 8:
             cout << "August" << endl;
-        }
-        else if (Num == 9)
-        {
+            break;
+        case 9:
             cout << "September" << endl;
-        }
-        else if (Num == 10)
-        {
+            break;
+        case 10:
             cout << "October" << endl;
-        }
-        else if (Num == 11)
-        {
+            break;
+        case 11:
             cout << "November" << endl;
-        }
-        else if (Num == 12)
-        {
+            break;
+        case 12:
             cout << "December" << endl;
+            break;
         }
     }
     else
         cout << "Wrong Month\n";
+       
 }
 int main()
 {

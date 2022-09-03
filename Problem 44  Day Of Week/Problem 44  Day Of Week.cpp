@@ -10,37 +10,33 @@ void IdentifyDayOfWeek()
     cin >> Num;
     if (Num >= 1 && Num <= 7)
     {
-        if (Num == 1)
+        switch (Num)
         {
+        case 1:
             cout << "Sunday" << endl;
-        }
-        else if (Num == 2)
-        {
+            break;
+        case 2:
             cout << "Monday" << endl;
-        }
-        else if (Num == 3)
-        {
+            break;
+        case 3:
             cout << "Tuesday" << endl;
-        }
-        else if (Num == 4)
-        {
+            break;
+        case 4 :
             cout << "Wednesday" << endl;
-        }
-        else if (Num == 5)
-        {
+            break;
+        case 5:
             cout << "Thursday" << endl;
-        }
-        else if (Num == 6)
-        {
+            break;
+        case 6 :
             cout << "Friday" << endl;
-        }
-        else if (Num == 7)
-        {
+            break;
+        case 7 :
             cout << "Saturday" << endl;
+            break;
         }
     }
     else
-        cout << "Wrong Day Please Try Again\n";
+        cout << "Wrong Day \n";
 }
 int main()
 {
