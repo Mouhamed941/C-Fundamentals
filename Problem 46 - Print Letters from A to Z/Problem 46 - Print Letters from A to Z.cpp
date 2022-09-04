@@ -5,6 +5,7 @@
 using namespace std;
 void PrintCapitalLetters()
 {
+	cout << "Capital Letters : \n";
 	for (size_t i = 65; i <= 90; i++)
 	{
 		cout << char(i) << endl;
@@ -12,6 +13,7 @@ void PrintCapitalLetters()
 }
 void PrintSmallLetters()
 {
+	cout << "Capital Letters : \n";
 	for (size_t i = 97; i <= 122; i++)
 	{
 		cout << char(i) << endl;
@@ -19,11 +21,8 @@ void PrintSmallLetters()
 }
 int main()
 {
-	cout << "Capital Letters : \n";
 	PrintCapitalLetters();
-	cout << "Capital Letters : \n";
 	PrintSmallLetters();
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
