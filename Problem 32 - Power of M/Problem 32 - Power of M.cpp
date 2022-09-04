@@ -3,22 +3,31 @@
 using namespace std;
 #include <iostream>
 #include <cmath>;
-void PowerOfM(int Number, int Exponent)
+int Num, Exponent,Result=1;
+
+void ReadNumberAndExponent()
 {
-    //This function prints the result of given Number and given exponent
-    cout << pow(Number, Exponent) << endl;
+    std::cout << "Please Enter a Number : \n";
+    cin >> Num;
+
+    std::cout << "Please Enter a power : \n";
+    cin >> Exponent;
+}
+int PowerOfNumberUsingForLoop()
+{
+    for (int i = 1; i <= Exponent; i++)
+    {
+        Result = Result * Num;
+    }
+    return Result;
+}
+void PrintTheResult()
+{
+    cout <<PowerOfNumberUsingForLoop();
 }
 int main()
 {
-    std::cout << "Please Enter a Number : \n";
-    int Number;
-    cin >> Number;
-
-    std::cout << "Please Enter a power : \n";
-    int Exponent;
-    cin >> Exponent;
-
-    PowerOfM(Number, Exponent);
-
+    ReadNumberAndExponent();
+    PrintTheResult();
 }
 
