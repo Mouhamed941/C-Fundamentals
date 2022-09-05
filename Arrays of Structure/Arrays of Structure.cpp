@@ -39,10 +39,11 @@ void PrintPersonInfo(strPerson PersonInfo)
 void ReadPersonsInfo(strPerson Persons[100],int &Length)
 {
    
-    cout << "Please Enter The Number of Arrays Elemants : \n";
+    cout << "How Many Persons Do you want to Enter : \n";
     cin >> Length;
     for (int i = 0; i < Length ; i++)
     {
+        cout << "Please Enter Person's " << i +1 << " Info" << endl;
         ReadPersonInfo(Persons[i]);
     }
 }
