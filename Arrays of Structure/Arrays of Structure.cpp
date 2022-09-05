@@ -25,8 +25,7 @@ void ReadPersonInfo(strPerson &PersonInfo)
 
         cout << "Please Enter your Phone : " << endl;
         cin >> PersonInfo.Phone;
-
-}
+    }
 void PrintPersonInfo(strPerson PersonInfo)
 {
     cout << "********************************\n";
@@ -37,20 +36,30 @@ void PrintPersonInfo(strPerson PersonInfo)
     cout << "********************************\n";
 
 }
-void Read2PersonInfo(strPerson Persons[2])
+void ReadPersonsInfo(strPerson Persons[100],int &Length)
 {
-    ReadPersonInfo(Persons[0]);
-    ReadPersonInfo(Persons[1]);
+   
+    cout << "Please Enter The Number of Arrays Elemants : \n";
+    cin >> Length;
+    for (int i = 0; i < Length ; i++)
+    {
+        ReadPersonInfo(Persons[i]);
+    }
 }
-void Print2PersonInfo(strPerson Persons[2])
+void PrintPersonsInfo(strPerson Persons[100],int Length)
 {
-    PrintPersonInfo(Persons[0]);
-    PrintPersonInfo(Persons[1]);
+    
+    for (int i = 0; i < Length; i++)
+    {
+        PrintPersonInfo(Persons[i]);
+    }
 }
 int main()
 {
-    strPerson Persons[2];
-    Read2PersonInfo(Persons);
-    Print2PersonInfo(Persons);
+    strPerson Persons[100];
+    int Length = 0;
+
+    ReadPersonsInfo(Persons,Length);
+    PrintPersonsInfo(Persons,Length);
 }
 
