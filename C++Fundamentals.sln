@@ -127,6 +127,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 29 - Print Sum Even
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 46 - Print Letters from A to Z", "Problem 46 - Print Letters from A to Z\Problem 46 - Print Letters from A to Z.vcxproj", "{E0F5051B-8BBC-4B9D-BFC1-0B4D122C15B4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "For Loop And Arrays", "For Loop And Arrays\For Loop And Arrays.vcxproj", "{311D4293-7BA2-448B-98D7-D39D019F35DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -631,6 +633,14 @@ Global
 		{E0F5051B-8BBC-4B9D-BFC1-0B4D122C15B4}.Release|x64.Build.0 = Release|x64
 		{E0F5051B-8BBC-4B9D-BFC1-0B4D122C15B4}.Release|x86.ActiveCfg = Release|Win32
 		{E0F5051B-8BBC-4B9D-BFC1-0B4D122C15B4}.Release|x86.Build.0 = Release|Win32
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Debug|x64.ActiveCfg = Debug|x64
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Debug|x64.Build.0 = Debug|x64
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Debug|x86.Build.0 = Debug|Win32
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x64.ActiveCfg = Release|x64
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x64.Build.0 = Release|x64
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x86.ActiveCfg = Release|Win32
+		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
