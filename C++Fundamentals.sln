@@ -129,6 +129,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 46 - Print Letters 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "For Loop And Arrays", "For Loop And Arrays\For Loop And Arrays.vcxproj", "{311D4293-7BA2-448B-98D7-D39D019F35DD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nested For Loops", "Nested For Loops\Nested For Loops.vcxproj", "{9BED2D2E-47F6-469E-8067-60A26C679488}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "While Loop", "While Loop\While Loop.vcxproj", "{136489B4-1942-424C-BFA4-AF5AABCC2DE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -641,6 +645,22 @@ Global
 		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x64.Build.0 = Release|x64
 		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x86.ActiveCfg = Release|Win32
 		{311D4293-7BA2-448B-98D7-D39D019F35DD}.Release|x86.Build.0 = Release|Win32
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Debug|x64.ActiveCfg = Debug|x64
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Debug|x64.Build.0 = Debug|x64
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Debug|x86.Build.0 = Debug|Win32
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Release|x64.ActiveCfg = Release|x64
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Release|x64.Build.0 = Release|x64
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Release|x86.ActiveCfg = Release|Win32
+		{9BED2D2E-47F6-469E-8067-60A26C679488}.Release|x86.Build.0 = Release|Win32
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Debug|x64.ActiveCfg = Debug|x64
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Debug|x64.Build.0 = Debug|x64
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Debug|x86.Build.0 = Debug|Win32
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Release|x64.ActiveCfg = Release|x64
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Release|x64.Build.0 = Release|x64
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Release|x86.ActiveCfg = Release|Win32
+		{136489B4-1942-424C-BFA4-AF5AABCC2DE0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
