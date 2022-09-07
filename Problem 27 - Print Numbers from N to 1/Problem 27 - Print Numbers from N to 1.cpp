@@ -12,9 +12,11 @@ int ReadNumber()
 }
 void PrintNumbers(int Num)
 {
-    for (int i = Num; i >= 1; i--)
+    int i = Num;
+    while (i >= 1)
     {
         cout << i << endl;
+        i--;
     }
 }
 int main()

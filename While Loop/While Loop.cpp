@@ -1,7 +1,7 @@
 #include <iostream>,
 
 using namespace std;
-int ReadIntNumberInRang(int From, int To)
+int ReadIntNumberInRangUsingWhile(int From, int To)
 {
 	int Number;
 	cout << "Please Enter 2 Numbers Between " << From << " To " << To << endl;
@@ -14,8 +14,22 @@ int ReadIntNumberInRang(int From, int To)
 	}
 	return Number;
 }
+int ReadIntNumberInRangUsingDoWhile(int From, int To)
+{
+	int Number;
+	do
+	{
+		cout << "Please Enter 2 Numbers Between " << From << " To " << To << endl;
+		cin >> Number;
+	} while (Number < From || Number > To);
+	
+	
+	return Number;
+}
+
 int main()
 {
-	cout << ReadIntNumberInRang(18, 45);
+	cout << ReadIntNumberInRangUsingWhile(18, 45) << endl;
+	cout << ReadIntNumberInRangUsingDoWhile(18, 45);
 }
 

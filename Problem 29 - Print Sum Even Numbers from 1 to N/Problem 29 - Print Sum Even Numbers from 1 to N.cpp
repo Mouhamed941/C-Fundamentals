@@ -13,12 +13,14 @@ int ReadNumber()
 int PrintEvenOddNumbers(int Num)
 {
     int Sum = 0;
-    for (int i = Num; i >= 1; i--)
+    int i = Num;
+    while (i >= 1)
     {
         if (i % 2 == 0)
         {
             Sum += i;
         }
+        i--;
     }
     return Sum;
 }
