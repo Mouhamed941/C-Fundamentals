@@ -3,34 +3,47 @@
 
 #include <iostream>
 using namespace std;
-int Age;
-bool HasDriverLicense;
-void ReadEmplooyesInfo()
+struct stInfo    
 {
+    int Age;
+    bool HasDriverLicense;
+    bool HasRecommendation;
+};
+stInfo ReadEmplooyesInfo()
+{
+    stInfo Info;
     cout << "Enter Your Age : \n";
-    cin >> Age;
+    cin >> Info.Age;
 
     cout << "Do You Have a Driver license : 1/0 \n";
-    cin >> HasDriverLicense;
+    cin >> Info.HasDriverLicense;
+
+    cout << "Do You Have a Recommendation : 1/0 \n";
+    cin >> Info.HasRecommendation;
+    return Info;
 }
-void CheckEmployeesEmployeeQualifications()
+bool IsAccepted(stInfo Info)
 {
-    if (Age > 21 && HasDriverLicense == 1)
+    if (Info.HasRecommendation)
+    {
+        return true;
+    }
+    else
+        return(Info.Age > 21 && Info.HasDriverLicense);  
+}
+void PrintResult(stInfo Info)
+{
+    if (IsAccepted(Info))
     {
         cout << "Hired\n";
     }
     else
         cout << "Rejected\n";
 }
-void HireaDriver()
-{
-    ReadEmplooyesInfo();
-    CheckEmployeesEmployeeQualifications();
-}
 
 int main()
 {
-    HireaDriver();
+    PrintResult(ReadEmplooyesInfo());
     
 }
 
