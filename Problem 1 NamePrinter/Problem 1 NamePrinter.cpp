@@ -2,13 +2,15 @@
 //
 
 #include <iostream>
-void PrintmyName()
+#include <string>
+using namespace std;
+void PrintmyName(string Name)
 {
-    std::cout << "Mohammed\n";
+    std::cout << "Your Name is : " << Name << endl;
 }
 int main()
 {
-    PrintmyName();
+    PrintmyName("Mohammed");
 }
 
 
