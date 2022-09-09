@@ -33,7 +33,8 @@ int MaxOf3Number(int Num1, int Num2, int Num3)
         return Max;
     }
     else
-        cout << "Numbers are equal";
+        cout << "Numbers are equal" << endl;
+    return 0;
 }
 void PrintResult(int Max)
 {
