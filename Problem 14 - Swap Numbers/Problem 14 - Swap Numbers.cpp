@@ -1,5 +1,15 @@
 #include <iostream>
 using namespace std;
+void ReadNumbers(int& Num1, int& Num2)
+{
+    cout << "Please Enter First Number : \n";
+    cin >> Num1;
+
+    cout << "Please Enter Seconde Number : \n";
+    cin >> Num2;
+    cout << endl;
+    cout << Num1 << endl << Num2 << endl;
+}
 void SwapNumbers(int &Number1, int &Number2)
 {
     int Plate = Number1;
@@ -9,20 +19,10 @@ void SwapNumbers(int &Number1, int &Number2)
 }
 int main()
 {
-    int Number1, Number2;
-
-    cout << "Please Enter First Number : \n";
-    cin >> Number1;
-
-    cout << "Please Enter Seconde Number : \n";
-    cin >> Number2;
-    cout << endl;
-
-    cout << Number1 << endl << Number2 << endl;
+    int Number1 = 0, Number2 = 0;
+    ReadNumbers(Number1, Number2);
     SwapNumbers(Number1, Number2);
-    cout << Number1 << " " << Number2 << endl;
-
-  
+    
 }
 
 
