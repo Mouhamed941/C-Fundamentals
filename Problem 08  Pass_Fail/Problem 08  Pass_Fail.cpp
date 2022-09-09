@@ -3,22 +3,27 @@
 
 #include <iostream>
 using namespace std;
-int Mark;
-void ReadMark()
+
+int ReadMark()
 {
+    int Mark;
     cout << "Please Enter your Mark : \n";
     cin >> Mark;
+    return Mark;
 }
-void CheckPassFail()
+bool CheckPassFail(int Mark)
+{  
+    return (Mark >= 50);      
+}
+void PrintResult()
 {
-    ReadMark();
-    if (Mark >= 50)
+    if (CheckPassFail(ReadMark()))
         cout << "Passed\n";
     else
         cout << "Failed\n";
 }
 int main()
 {
-    CheckPassFail();
+    PrintResult();
 }
 
