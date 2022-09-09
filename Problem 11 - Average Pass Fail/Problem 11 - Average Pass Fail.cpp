@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+enum enPassFail { Pass = 1, Fail = 2 };
 float Mark1, Mark2, Mark3, Avrg;
 void ReadMarks()
 {
@@ -20,18 +21,29 @@ float CalculatMarksAverag()
     Avrg = (Mark1 + Mark2 + Mark3) / 3;
     return Avrg;
 }
-void CheckPassFail()
+enPassFail CheckAverage()
 {
     
     if (Avrg >= 50)
-        cout << "Passed\n";
+        return enPassFail::Pass;
     else
-        cout << "Failed\n";
+        return enPassFail::Fail; 
+}
+void PrintResult()
+{
+    cout << "Your Average is : " << Avrg << endl;
+    if (CheckAverage() == enPassFail::Pass)
+    {
+        cout << "you passed" << endl;
+    }
+    else
+        cout << "you failed" << endl;
 }
 int main()
 {
     ReadMarks();
     CalculatMarksAverag();
-    CheckPassFail();
+    CheckAverage();
+    PrintResult();
 }
 
