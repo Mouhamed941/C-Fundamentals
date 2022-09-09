@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
-int main()
+int Number1, Number2, Number3;
+void ReadNumbers()
 {
-    int Number1, Number2, Number3;
+    
 
-    cout << "Please Enter First Number : \n";
+    cout << "Please Enter First Number : " << endl;
     cin >> Number1;
 
     cout << "Please Enter Seconde Number : \n";
@@ -13,7 +14,19 @@ int main()
     cout << "Please Enter Third Number : \n";
     cin >> Number3;
     cout << endl;
-
-    cout << Number1 + Number2 + Number3 << endl;
+}
+int CalculateNumbers()
+{
+    int Result = Number1 + Number2 + Number3;
+    return Result;
+}
+void PrintResult(int Result)
+{
+    cout << CalculateNumbers() << endl;
+}
+int main()
+{
+    ReadNumbers();
+    PrintResult(CalculateNumbers());
 }
 

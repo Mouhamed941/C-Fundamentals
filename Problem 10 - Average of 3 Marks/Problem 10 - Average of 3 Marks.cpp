@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-int main()
+float Mark1, Mark2, Mark3, Avrg;
+void ReadMarks()
 {
-    int Mark1, Mark2, Mark3,Avrg;
-
     cout << "Please Enter First Mark : \n";
     cin >> Mark1;
 
@@ -13,6 +12,17 @@ int main()
     cout << "Please Enter Third Mark : \n";
     cin >> Mark3;
     cout << endl;
-    Avrg = (Mark1 + Mark2 + Mark3) / 3;
-    cout << Avrg << endl;
+}
+float CalculateAverage()
+{
+    return (Mark1 + Mark2 + Mark3) / 3;
+}
+void PrintAverage()
+{
+    cout << CalculateAverage() << endl;
+}
+int main()
+{
+    ReadMarks();
+    PrintAverage();
 }
