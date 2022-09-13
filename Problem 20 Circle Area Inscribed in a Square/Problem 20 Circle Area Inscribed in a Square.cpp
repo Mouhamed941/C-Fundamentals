@@ -3,20 +3,28 @@
 using namespace std;
 #include <iostream>
 #include <cmath>;
+float ReadSquareHieght()
+{
+    float A;
+
+    cout << "Please Enter The Hieght of the Square : \n";
+    cin >> A;
+    cout << endl;
+    return A;
+}
 float CircleArea(float A)
 {
     const float Pi = 3.14;
     float Area = (Pi * pow(A, 2) / 4);
     return Area;
 }
+void PrintResult(float Result)
+{
+    cout << "The Area of This Square is : " << Result << endl;
+}
 int main()
 {
-    float A;
-   
-    cout << "Please Enter The Hieght of the Square : \n";
-    cin >> A;
-    cout << endl;
     
-    cout << "The Area of This Circle is : " << CircleArea(A) << endl;
+    PrintResult(CircleArea(ReadSquareHieght()));
 }
 

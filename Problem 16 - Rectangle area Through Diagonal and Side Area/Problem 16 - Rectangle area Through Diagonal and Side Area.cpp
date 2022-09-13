@@ -3,23 +3,29 @@
 using namespace std;
 #include <iostream>
 #include <cmath>;
-double RectangleAreaThroughDiagonalandSideArea(double Side, double Diagonal)
+void ReadRectangleInfo(float& Side, float& Diagonal)
 {
-    double Area = Side * (sqrt(pow(Diagonal, 2) - (pow(Side, 2))));
-    return Area;
-}
-int main()
-{   std::cout << "Please Enter The Side  Of Rectangle : \n";
-    double Side;
+    cout << "Please Enter The Side  Of Rectangle : \n";
     cin >> Side;
 
-    std::cout << "Please Enter The Diagonal  Of Rectangle : \n";
-    double Diagonal;
+    cout << "Please Enter The Diagonal  Of Rectangle : \n";
     cin >> Diagonal;
-
-    
-    
-    cout << RectangleAreaThroughDiagonalandSideArea(Side,Diagonal) << endl;
+}
+float RectangleAreaThroughDiagonalandSideArea(float Side, float Diagonal)
+{
+    float Area = Side * (sqrt(pow(Diagonal, 2) - (pow(Side, 2))));
+    return Area;
+}
+void PrintResult(float Result)
+{
+    cout << "Rectangle Area : " << Result << endl;
+}
+int main()
+{  
+    float Side;
+    float Diagonal;
+    ReadRectangleInfo(Side,Diagonal);
+    PrintResult(RectangleAreaThroughDiagonalandSideArea(Side, Diagonal));
 
 
 }
