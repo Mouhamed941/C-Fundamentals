@@ -10,17 +10,35 @@ int ReadNumber()
     cin >> Num;
     return Num;
 }
-void PrintNumbers(int Num)
+void PrintNumber_UsingWhile(int Num)
 {
-    int i = 1;
-    while (i <= Num)
+    int Counter = 0;
+
+    while (Counter <=Num)
+    {
+        Counter++;
+        cout << Num << endl;
+    }
+}
+void PrintNumber_UsingDoWhile(int Num)
+{
+    int Counter = 0;
+    do
+    {
+        Counter++;
+        cout << Counter << endl;
+    } while (Counter < Num);
+}
+void PrintNumbers_UsingFor(int Num)
+{
+    for (size_t i = 1; i <= Num; i++)
     {
         cout << i << endl;
-        i++;
     }
 }
 int main()
 {
     int Num = ReadNumber();
-    PrintNumbers(Num);
+    PrintNumber_UsingDoWhile(Num);
+    PrintNumbers_UsingFor(Num);
 }
