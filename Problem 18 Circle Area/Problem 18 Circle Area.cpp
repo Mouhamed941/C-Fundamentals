@@ -1,20 +1,29 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+void ReadInputs(double& Radius)
+{
+    cout << "Please Enter The Radius of Circle : \n";
+   
+
+    cin >> Radius;
+}
 double CircleArea(double Radius)
 {
     const float Pi = 3.14;
     double Area = Pi * pow(Radius, 2);
     return Area;
+}void PrintResult(double Result)
+{
+    cout << Result << endl;
 }
 int main()
 {
-    cout << "Please Enter The Radius of Circle : \n";
+   
     double Radius;
+    ReadInputs(Radius);
+    PrintResult(CircleArea(Radius));
     
-    cin >> Radius;
-
-    
-    cout << CircleArea(Radius) << endl;
+   
 }
 
