@@ -19,8 +19,24 @@ void PrintNumbers(int Num)
         i--;
     }
 }
+void PrintNumber_UsingDoWhile(int Num)
+{
+    int Counter = Num+1;
+    do
+    {
+        Counter--;
+        cout << Counter << endl;
+    } while (Counter > 1);
+}
+void PrintNumbers_UsingFor(int Num)
+{
+    for (size_t i = Num; i >= 1; i--)
+    {
+        cout << i << endl;
+    }
+}
 int main()
 {
     int Num = ReadNumber();
-    PrintNumbers(Num);
+    PrintNumbers_UsingFor(Num);
 }
