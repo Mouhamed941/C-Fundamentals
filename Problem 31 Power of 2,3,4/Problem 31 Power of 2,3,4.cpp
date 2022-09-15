@@ -1,7 +1,14 @@
 #include <cmath>;
 #include <iostream>
 using namespace std;
-void PowOf(short Number)
+int ReadNumber()
+{
+    cout << "Please Enter a Number : \n";
+    short Number;
+    cin >> Number;
+    return Number;
+}
+void PowOf_2_3_4(short Number)
 {
 
     cout << pow(Number, 2) << endl;
@@ -10,11 +17,8 @@ void PowOf(short Number)
 }
 int main()
 {
-    cout << "Please Enter a Number : \n";
-    short Number;
-    cin >> Number;
-    cout << endl;
-    PowOf(Number);
+    
+    PowOf_2_3_4(ReadNumber());
     
 }
 
