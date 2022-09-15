@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 double TotalSales,Comission;
-void ReadTotalSalesk()
+void ReadTotalSales()
 {
     cout << "Please Enter Your Total Sales Amount : \n";
     cin >> TotalSales;
@@ -27,7 +27,7 @@ double CalculateComission()
 }
 int main()
 {
-    ReadTotalSalesk();
+    ReadTotalSales();
     cout << CalculateComission() << endl;
 }
 
