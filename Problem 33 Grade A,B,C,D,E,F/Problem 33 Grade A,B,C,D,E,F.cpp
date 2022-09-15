@@ -5,15 +5,19 @@
 using namespace std;
 
 short Mark;
-void ReadMark()
+
+int ReadNumberInRange(int From, int To)
 {
-    cout << "Please Enter Your Mark : \n";
-    cin >> Mark;
-}
-void CheckGrade()
-{
-    if (Mark <= 100)
+    do
     {
+        cout << "Please Enter Your Mark : \n";
+        cin >> Mark;
+    } while (Mark < 0 || Mark > 100);
+    return Mark;
+}
+void CheckGrade(int Mark)
+{
+    
         if (Mark <= 100 && Mark >= 90)
         {
             cout << 'A' << endl;
@@ -38,16 +42,9 @@ void CheckGrade()
         {
             cout << 'F' << endl;
         }
-    }
-    else
-    {
-        cout << "Invalid Mark" << endl;
-    }
+   
 }
 int main()
 {
-    ReadMark();
-    CheckGrade();
-   
-    
+    CheckGrade(ReadNumberInRange(0, 100));
 }
