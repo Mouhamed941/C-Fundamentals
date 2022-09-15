@@ -3,7 +3,8 @@
 
 #include <iostream>
 using namespace std;
-int Num1, Num2, Result;
+float Num1, Num2;
+float Result;
 char OperationType;
 void ReadNumbers()
 {
@@ -17,7 +18,7 @@ void ReadNumbers()
     cin >> OperationType;
 
 }
-int CalculatNumbers()
+float CalculatNumbers()
 {
     switch (OperationType)
     {
@@ -44,9 +45,13 @@ int CalculatNumbers()
     }
     return Result;
 }
+void PrintResult(float Result)
+{
+    cout << CalculatNumbers();
+}
 int main()
 {
     ReadNumbers();
-    cout <<CalculatNumbers();
+    PrintResult(CalculatNumbers());
 }
 
