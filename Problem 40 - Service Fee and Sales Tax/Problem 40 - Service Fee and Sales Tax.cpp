@@ -1,19 +1,30 @@
 using namespace std;
 #include <iostream>
+float ReadPositiveNumber(string Message)
+{
+    int Num;
+    do
+    {
+        cout << Message << endl;
+        cin >> Num;
 
+    } while (Num <= 0);
+
+    return Num;
+}
+float TotalBillAfterServiceAndTax(float TotalBill)
+{
+    TotalBill = TotalBill * 1.1;
+    TotalBill = TotalBill * 1.16;
+    return TotalBill;
+}
 int main()
 {
-    cout << "Please Enter The  Bill Value: \n";
-    short BillValue;
-    cin >> BillValue;
+    int TotalBill = ReadPositiveNumber("Please Enter Total Bill : \n");
 
-    //Calculating the total bill adding the Fee Service(10%)
-    float TotalBill = BillValue * 1.1;
+    
 
-    //Calculating the total bill adding the Sales Tax(16%)
-    TotalBill = TotalBill * 1.16;
-
-    cout << TotalBill << endl;
+    cout << "Total Bill After Fee Service And Sales Tax : " << TotalBillAfterServiceAndTax(TotalBill)<< endl;
 }
 
 
