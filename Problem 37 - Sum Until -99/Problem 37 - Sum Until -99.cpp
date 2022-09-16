@@ -2,22 +2,32 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
-void SumUntil99()
+float ReadNumber(string Message)
 {
-	int Num=0, Sum=0;
-	cout << "Please Enter a Number : \n";
-	cin >> Num;
-	while (Num != -99)
+	float Number = 0;
+	cout << Message << endl;
+	cin >> Number;
+	return Number;
+}
+float SumUntil99()
+{
+	int Num = 0, Sum = 0,Counter=1;
+	do
 	{
-		cout << "Please Enter a Number : \n";
-		cin >> Num;
+		Num = ReadNumber("Please Enter Number " + to_string(Counter));
+		if (Num == -99)
+		{
+			break;
+		}
 		Sum += Num;
-	}
-	cout << "Sum Of Numbers is : " << Sum << endl;
+		Counter++;
+	} while (Num != -99);
+	return Sum;
 }
 int main()
 {
-	SumUntil99();
+	cout << "Result : " << SumUntil99();
 }
 
