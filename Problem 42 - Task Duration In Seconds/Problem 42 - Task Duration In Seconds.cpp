@@ -1,40 +1,39 @@
 using namespace std;
 #include <iostream>
-int TotalSecondCalculator(int NumberOfDays, int NumberOfHours, int NumberOfMinutes, int NumberOfSeconds)
+float ReadPositiveNumber(string Message)
 {
-    int DayPerSeconds = 24 * 60 * 60;
-    DayPerSeconds = NumberOfDays * DayPerSeconds;
+    int Num;
+    do
+    {
+        cout << Message << endl;
+        cin >> Num;
 
-    int HourPerSeconds = 60 * 60;
-    HourPerSeconds = NumberOfHours * HourPerSeconds;
+    } while (Num <= 0);
 
-    int MinutePerSeconds = 60;
-    MinutePerSeconds = NumberOfMinutes * MinutePerSeconds;
-
-    int Seconds = NumberOfSeconds;
-
-    int TotalSeconds = DayPerSeconds + HourPerSeconds + MinutePerSeconds + Seconds;
+    return Num;
+}
+struct stTaskDuration { int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds; };
+stTaskDuration ReadTaskDuration()
+{
+    stTaskDuration TaskDuration;
+    TaskDuration.NumberOfDays = ReadPositiveNumber("Please Enter The Number Of Days : ");
+    TaskDuration.NumberOfHours = ReadPositiveNumber("Please Enter The Number Of Hours : ");
+    TaskDuration.NumberOfMinutes = ReadPositiveNumber("Please Enter The Number Of Minutes : ");
+    TaskDuration.NumberOfSeconds = ReadPositiveNumber("Please Enter The Number Of Seconds : ");
+    return TaskDuration;
+}
+int TotalTaskDurationInSeconds(stTaskDuration TaskDuration)
+{
+    float TotalSeconds = 0;
+    TotalSeconds = TaskDuration.NumberOfDays * 60 * 60 * 24;
+    TotalSeconds += TaskDuration.NumberOfHours * 60 * 60;
+    TotalSeconds += TaskDuration.NumberOfMinutes * 60;
+    TotalSeconds += TaskDuration.NumberOfSeconds;
     return TotalSeconds;
 }
 int main()
 {
-    cout << "Please Enter The Number Of Days : \n";
-    int Days;
-    cin >> Days;
-
-    cout << "Please Enter The Number Of Hours : \n";
-    int Hours;
-    cin >> Hours;
-    
-    cout << "Please Enter The Number Of Minutes : \n";
-    int Minutes;
-    cin >> Minutes;
-
-    cout << "Please Enter The Number Of Seconds : \n";
-    int Seconds;
-    cin >> Seconds;
-
-    cout << TotalSecondCalculator(Days,Hours, Minutes, Seconds) << endl;
+    cout << TotalTaskDurationInSeconds(ReadTaskDuration());
 }
 
 
