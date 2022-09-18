@@ -1,27 +1,48 @@
 using namespace std;
 #include <iostream>
-void SecondsConverter(int NumberOfSecnds)
+float ReadPositiveNumber(string Message)
 {
-    int SecondsPerDay = 24 * 60 * 60;
-    int SecondsPerHour = 60 * 60;
-    int SecondsPerMinute = 60;
-    int NumberOfDays = floor(NumberOfSecnds / SecondsPerDay);
+    int Num;
+    do
+    {
+        cout << Message << endl;
+        cin >> Num;
+
+    } while (Num <= 0);
+
+    return Num;
+}
+struct strTaskDuration { int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds; };
+strTaskDuration SecondsToTaskDurationConverter(int& NumberOfSecnds)
+{
+    strTaskDuration TaskDuration;
+    const int SecondsPerDay = 24 * 60 * 60;
+    const int SecondsPerHour = 60 * 60;
+    const int SecondsPerMinute = 60;
+    TaskDuration.NumberOfDays = floor(NumberOfSecnds / SecondsPerDay);
     int Remainder = NumberOfSecnds % SecondsPerDay;
 
-    int NumberOfHours = floor(Remainder / SecondsPerHour);
+    TaskDuration.NumberOfHours = floor(Remainder / SecondsPerHour);
     Remainder = Remainder % SecondsPerHour;
 
-    int NumberOfMinutes = floor(Remainder / SecondsPerMinute);
+    TaskDuration.NumberOfMinutes = floor(Remainder / SecondsPerMinute);
     Remainder = Remainder % SecondsPerMinute;
 
-    int NumberOfSeconds = Remainder;
-    cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds << endl;
+    TaskDuration.NumberOfSeconds = Remainder;
+    return TaskDuration;
+}
+void PrintTaskDurationDetails(strTaskDuration TaskDuration)
+{
+    cout << "\n";
+    cout << TaskDuration.NumberOfDays << ":";
+    cout << TaskDuration.NumberOfHours << ":" ;
+    cout << TaskDuration.NumberOfMinutes<< ":" ;
+    cout << TaskDuration.NumberOfSeconds ;
 }
 int main()
 {
-    cout << "Please Enter The Number Of Seconds : \n";
-    int TotalSeconds;
-    cin >> TotalSeconds;
-    SecondsConverter(TotalSeconds);
+    int TotalSeconds = ReadPositiveNumber("Please Enter The Number Of Seconds : ");
+    
+    PrintTaskDurationDetails(SecondsToTaskDurationConverter(TotalSeconds));
 }
 
