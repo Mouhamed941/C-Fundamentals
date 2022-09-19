@@ -4,43 +4,46 @@
 #include <iostream>
 using namespace std;
 string PIN, Balance = "5151";;
-void ReadPIN()
+string ReadPIN()
 {
     cout << "Please Enter Your PIN : ";
     cin >> PIN;
+    return PIN;
 }
-void ChekPIN()
+bool Login()
 {
-    int counter = 0;
-    while (counter <2)
+    int counter = 3;
+    string PinCode;
+    do
     {
-        if (PIN == "1234")
+        PinCode = ReadPIN();
+        counter--;
+        if (PinCode == "1234")
         {
-            cout << Balance << endl;
-            break;
+            return 1;
         }
         else
         {
-
-            cout << "Wrong PIN" << endl;
+            system("color 4F");
+            cout << "Wrong PIN ,You have " << counter << " more tries " << endl;
         }
 
-        cout << "Please Enter Your PIN : ";
-        cin >> PIN;
-
-        counter++;
-        if (counter == 2)
-        {
-            cout << "Card is Locked" << endl;
-        }
-
-    }
+    } while (counter >= 1 && PinCode != "1234");
+    return 0;
 }
 
 int main()
 {
 
-    ReadPIN();
-    ChekPIN();
+    
+    if (Login())
+    {
+        system("color 2F");
+        cout << "Logined Successfully \nYour Balance is : 7500\n";
+    }
+    else
+    {
+        cout << "Your card blocked call the bank for help!" << endl;
+    }
 
 }
