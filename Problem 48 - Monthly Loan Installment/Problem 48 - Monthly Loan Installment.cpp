@@ -1,21 +1,30 @@
-// Problem 48 - Monthly Loan Installment.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 using namespace std;
 #include <iostream>
+using namespace std;
+float ReadPositiveNumber(string Message)
+{
+    int Num;
+    do
+    {
+        cout << Message << endl;
+        cin >> Num;
 
+    } while (Num <= 0);
+
+    return Num;
+}
+float MonthlyInstallment(float LoanAmount, float HomManyMnth)
+{
+    return LoanAmount / HomManyMnth;
+}
 int main()
 {
-    std::cout << "Please Enter the loan Amount : \n";
-    int LoanAmount;
-    cin >> LoanAmount;
-
-    std::cout << "After How many month you want to pay your loan : ? : \n";
-    int AfterHowManyMonth;
-    cin >> AfterHowManyMonth;
-    cout << endl;
-
-    int TheMonthlyInstallmentAmount = LoanAmount / AfterHowManyMonth;
-    cout << TheMonthlyInstallmentAmount << endl;
+    
+    int LoanAmount = ReadPositiveNumber("Please Enter the loan Amount : ");
+    int AfterHowManyMonth = ReadPositiveNumber("After How many month you want to pay your loan : ? : ");
+    
+    
+    cout << "Your Monthly Installment Amount is : " << MonthlyInstallment(LoanAmount,AfterHowManyMonth) << endl;
 
     
 }
