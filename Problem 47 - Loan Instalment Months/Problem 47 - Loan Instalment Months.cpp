@@ -2,29 +2,27 @@
 //
 using namespace std;
 #include <iostream>
-
-int main()
+float ReadPositiveNumber(string Message)
 {
-    std::cout << "Please Enter the loan installment : \n";  
-    int LoanAmount;
-    cin >> LoanAmount;
+    int Num;
+    do
+    {
+        cout << Message << endl;
+        cin >> Num;
 
-    std::cout << "Please Enter the Monthly Payment : \n";
-    int MonthlyPayment;
-    cin >> MonthlyPayment;
+    } while (Num <= 0);
 
-    int LoanInstalmentMonths = LoanAmount / MonthlyPayment;
-    cout << LoanInstalmentMonths << endl;
+    return Num;
+}
+float TotalMonths(float LoanAmount, float MonthlyInstallment)
+{
+    return LoanAmount / MonthlyInstallment;
+}
+int main()
+{             
+    int LoanAmount = ReadPositiveNumber("Please Enter the loan installment :");
+    int MonthlyPayment = ReadPositiveNumber("Please Enter the Monthly Payment : ");
+
+    cout <<"Total Months to Pay : " << TotalMonths(LoanAmount, MonthlyPayment) << endl;
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
