@@ -20,8 +20,8 @@ float MonthlyInstallment(float LoanAmount, float HomManyMnth)
 int main()
 {
     
-    int LoanAmount = ReadPositiveNumber("Please Enter the loan Amount : ");
-    int AfterHowManyMonth = ReadPositiveNumber("After How many month you want to pay your loan : ? : ");
+    float LoanAmount = ReadPositiveNumber("Please Enter the loan Amount : ");
+    float AfterHowManyMonth = ReadPositiveNumber("After How many month you want to pay your loan : ? : ");
     
     
     cout << "Your Monthly Installment Amount is : " << MonthlyInstallment(LoanAmount,AfterHowManyMonth) << endl;
