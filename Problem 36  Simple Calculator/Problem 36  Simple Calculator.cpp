@@ -3,10 +3,12 @@
 
 #include <iostream>
 using namespace std;
-float Num1, Num2;
+enum enOperationType { Add = '+', Substract = '-', Multiply = '*', Divide = '/' };
+
+
 float Result;
-char OperationType;
-void ReadNumbers()
+enOperationType OperationType;
+void ReadNumbers(float& Num1,float& Num2)
 {
     cout << "Please Enter The first Number : \n";
     cin >> Num1;
@@ -14,44 +16,48 @@ void ReadNumbers()
     cout << "Please Enter The Second Number : \n";
     cin >> Num2;
 
-    cout << "Please Enter The Operation Type  : \n";
-    cin >> OperationType;
 
 }
-float CalculatNumbers()
+enOperationType ReadOperationType()
+{
+    char OT = '+';
+    cout << "Please Enter Operation Type (+ ,-,*,/) : \n";
+    cin >> OT;
+    return (enOperationType)OT;
+}
+float CalculatNumbers(float Num1,float Num2,enOperationType OperationType)
 {
     switch (OperationType)
     {
-    case '+':
-        Result = Num1 + Num2;
-        //cout << Result << endl;
-        break;
-    case '-':
-        Result = Num1 - Num2;
-        //cout << Result << endl;
-        break;
-    case '*':
-        Result = Num1 * Num2;
-        //cout << Result << endl;
-        break;
-    case '/':
-        Result = Num1 / Num2;
-        //cout << Result << endl;
-        break;
+    case enOperationType::Add:
+        return Num1 + Num2;
+        
+
+    case enOperationType::Substract:
+        return Num1 - Num2;
+
+    case enOperationType::Multiply:
+        return Num1 * Num2;
+
+    case enOperationType::Divide:
+        return Num1 / Num2;
     
     default:
-        cout << "Invalid Inputs" << endl;
-        break;
+        return Num1 + Num2;
+        
     }
-    return Result;
+    
 }
 void PrintResult(float Result)
 {
-    cout << CalculatNumbers();
+    cout << Result << endl;
 }
 int main()
 {
-    ReadNumbers();
-    PrintResult(CalculatNumbers());
+    float Num1=0, Num2=0;
+    ReadNumbers(Num1,Num2);
+    enOperationType OperationType = ReadOperationType();
+    
+    PrintResult(CalculatNumbers(Num1, Num2,OperationType));
 }
 
