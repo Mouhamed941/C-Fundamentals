@@ -4,25 +4,37 @@
 #include <iostream>
 using namespace std;
 string PIN, Balance = "5151";;
-void ReadPIN()
+string ReadPIN()
 {
     cout << "Please Enter Your PIN : ";
     cin >> PIN;
+    return PIN;
 }
-void ChekPIN()
+bool Login()
 {
-    if (PIN == "1234")
-        cout << Balance << endl;
-    else
+    string PinCode ;
+    do
     {
-        cout << "Wrong PIN" << endl;
-    }
+        PinCode = ReadPIN();
+        if (PinCode == "1234")
+        {
+            return 1;
+        }
+        else
+        {
+            cout <<  "\n Wrong PIN Please Try again. \n";
+            system("color 4F");
+        }
+    } while (PinCode != "1234");
 }
 
 int main()
 {
     
-    ReadPIN();
-    ChekPIN();
+    if (Login())
+    {
+        system("color 2F");
+        cout << "Logined Successfully \nYour Balance is : 7500\n";
+    }
     
 }
